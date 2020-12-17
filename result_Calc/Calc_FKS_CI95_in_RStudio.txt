@@ -1,0 +1,78 @@
+[1] "./IC_Score_Pathologist/ic_table_4class_exp1.xlsx"
+[1] "data_all"
+    kappa    lwr.ci    upr.ci 
+0.4309194 0.4253800 0.4364587 
+[1] "data_high"
+    kappa    lwr.ci    upr.ci 
+0.4393367 0.4232588 0.4554147 
+[1] "data_mid"
+    kappa    lwr.ci    upr.ci 
+0.4307414 0.4128624 0.4486204 
+[1] "data_low"
+    kappa    lwr.ci    upr.ci 
+0.4486536 0.4307574 0.4665499 
+[1] "./IC_Score_Pathologist/ic_table_4class_exp2.xlsx"
+[1] "data_all"
+[1] "data_high"
+[1] "data_mid"
+[1] "data_low"
+    kappa    lwr.ci    upr.ci 
+0.4709333 0.4654722 0.4763944 
+    kappa    lwr.ci    upr.ci 
+0.4181577 0.4021388 0.4341767 
+    kappa    lwr.ci    upr.ci 
+0.5081788 0.4908928 0.5254649 
+    kappa    lwr.ci    upr.ci 
+0.4703392 0.4525263 0.4881522 
+[1] "./IC_Score_Pathologist/ic_table_4class_exp3.xlsx"
+[1] "data_all"
+[1] "data_high"
+[1] "data_mid"
+[1] "data_low"
+    kappa    lwr.ci    upr.ci 
+0.7803550 0.7747497 0.7859603 
+    kappa    lwr.ci    upr.ci 
+0.7672572 0.7508876 0.7836268 
+    kappa    lwr.ci    upr.ci 
+0.8020073 0.7841261 0.8198885 
+    kappa    lwr.ci    upr.ci 
+0.7700266 0.7519368 0.7881165 
+[1] "./IC_Score_Pathologist/ic_table_2class_exp1.xlsx"
+[1] "data_all"
+[1] "data_high"
+[1] "data_mid"
+[1] "data_low"
+    kappa    lwr.ci    upr.ci 
+0.6277029 0.6189971 0.6364087 
+    kappa    lwr.ci    upr.ci 
+0.7368133 0.7114997 0.7621269 
+    kappa    lwr.ci    upr.ci 
+0.6438529 0.6158677 0.6718381 
+    kappa    lwr.ci    upr.ci 
+0.5206062 0.4926210 0.5485914 
+[1] "./IC_Score_Pathologist/ic_table_2class_exp2.xlsx"
+[1] "data_all"
+[1] "data_high"
+[1] "data_mid"
+[1] "data_low"
+    kappa    lwr.ci    upr.ci 
+0.5432873 0.5345815 0.5519931 
+    kappa    lwr.ci    upr.ci 
+0.6942137 0.6689001 0.7195273 
+    kappa    lwr.ci    upr.ci 
+0.5132546 0.4852694 0.5412398 
+    kappa    lwr.ci    upr.ci 
+0.4305881 0.4026029 0.4585733 
+[1] "./IC_Score_Pathologist/ic_table_2class_exp3.xlsx"
+[1] "data_all"
+[1] "data_high"
+[1] "data_mid"
+[1] "data_low"
+    kappa    lwr.ci    upr.ci 
+0.8562358 0.8475300 0.8649416 
+    kappa    lwr.ci    upr.ci 
+0.8358045 0.8104910 0.8611181 
+    kappa    lwr.ci    upr.ci 
+0.8623524 0.8343671 0.8903376 
+    kappa    lwr.ci    upr.ci 
+0.8862087 0.8582235 0.9141939 
