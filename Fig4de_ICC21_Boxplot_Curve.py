@@ -154,60 +154,16 @@ icc21_exp12=np.load(os.path.join(result_Calc_dir,'ICC21_CI95_exp12.xlsx.npy'))
 print_ave_std_for_paper(icc21_exp12,'icc21_exp12 = ')
 fig_boxplot_icc21(icc21_exp12,result_Fig_dir,'Fig4d_icc21_exp12_HMP_boxplot')
 
-icc21_exp13=np.load(os.path.join(result_Calc_dir,'ICC21_CI95_exp13.xlsx.npy'))
-print_ave_std_for_paper(icc21_exp13,'icc21_exp13 = ')
-fig_boxplot_icc21(icc21_exp13,result_Fig_dir,'fig_icc21_exp13_HMP_boxplot')
+# icc21_exp13=np.load(os.path.join(result_Calc_dir,'ICC21_CI95_exp13.xlsx.npy'))
+# print_ave_std_for_paper(icc21_exp13,'icc21_exp13 = ')
+# fig_boxplot_icc21(icc21_exp13,result_Fig_dir,'fig_icc21_exp13_HMP_boxplot')
 
-icc21_exp23=np.load(os.path.join(result_Calc_dir,'ICC21_CI95_exp23.xlsx.npy'))
-print_ave_std_for_paper(icc21_exp23,'icc21_exp23 = ')
-fig_boxplot_icc21(icc21_exp23,result_Fig_dir,'fig_icc21_exp23_HMP_boxplot')
-
+# icc21_exp23=np.load(os.path.join(result_Calc_dir,'ICC21_CI95_exp23.xlsx.npy'))
+# print_ave_std_for_paper(icc21_exp23,'icc21_exp23 = ')
+# fig_boxplot_icc21(icc21_exp23,result_Fig_dir,'fig_icc21_exp23_HMP_boxplot')
 
 
 # [2] figure curve
 # Fig 4(e)
 fig_icc21_curve(icc21_exp12,result_Fig_dir,'Fig4e_icc21_exp12_curve',linecolor='r')
-# Fig 4(f)
-fig_icc21_curve(icc21_exp13,result_Fig_dir,'FigA9a_icc21_exp12_curve',linecolor='g')
-# Fig 4(g)
-fig_icc21_curve(icc21_exp23,result_Fig_dir,'FigA9b_icc21_exp12_curve',linecolor='b')
-
-
-# [3] see 2CLASS result icc12_exp12
-icc21_exp12_2CLASS=np.load(os.path.join(result_Calc_dir,'ICC21_CI95_exp12_2class.xlsx.npy'))
-icc21_exp12_2CLASS[ np.isnan(icc21_exp12_2CLASS) == True] = 1.0      
-fig_boxplot_icc21(icc21_exp12_2CLASS,result_Fig_dir,'FigA8c_icc21_exp12_with_HMP_boxplot_2CLASS')
-fig_icc21_curve(icc21_exp12_2CLASS,result_Fig_dir,'FigA8b_icc21_exp12_with_HMP_curve_2CLASS',linecolor='r')
-
-# [4] FigA8a: show only the number of diff on 2 class
-def fig_nbr_of_diff_each_user_curve(icc21_exp12,save_dir,save_name,linecolor='r'):
-    FONTSIZE=16
-    plt.close('all')
-    fig, ax = plt.subplots()
-    fig.set_size_inches(11.69, 4.5) # 11.69 is A4 paper width
-    loc_x=range(0,31)
-    labels_x=range(1,32)
-    ax.plot(loc_x,icc21_exp12,color=linecolor, marker='^', linestyle='solid',markerfacecolor=linecolor)
-    
-    plt.xticks(loc_x, labels_x)
-    plt.xlabel('Pathologist ID',fontsize=FONTSIZE)
-    plt.title('Number of inconsistent binary diagnosis between RS1 and RS2 of each pathologist',fontsize=FONTSIZE)
-    plt.grid(linestyle="--", alpha=0.6)
-    ax.grid(True, which='both')
-    plt.tick_params(labelsize=FONTSIZE)
-    fig.tight_layout()
-    fig.savefig(os.path.join(save_dir,save_name+'.pdf'),dpi=400)
-    fig.savefig(os.path.join(save_dir,save_name+'.png'),dpi=400)
-    
-    H = icc21_exp12[0:11]
-    M = icc21_exp12[11:21]
-    P = icc21_exp12[21:31]
-    print('________ Mean, Std of ICC21 for 3 LEVEL ________')
-    print(np.round( np.array([icc21_exp12.mean(), H.mean(),M.mean(),P.mean()]),decimals=3) )
-    print(np.round( np.array([icc21_exp12.std(), H.std(),M.std(),P.std()]),decimals=3) )
-   
-    
-nbr_of_diff_each_user = np.loadtxt(os.path.join(result_Calc_dir,'how_may_nbr_of_diff_from_each_user_2class_between_RS1_RS2.out'))
-fig_nbr_of_diff_each_user_curve(nbr_of_diff_each_user,result_Fig_dir,'FigA8a_nbr_of_diff_each_user',linecolor='k')
-
 

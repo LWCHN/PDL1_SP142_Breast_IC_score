@@ -136,3 +136,24 @@ if 1:
    
     icc21_exp12_2class = calc_icc21_array(ic_reslut_2class_exp1,ic_reslut_2class_exp2)
     save_icc21_array_to_excel(os.path.join(save_path ,"ICC21_CI95_exp12_2class.xlsx"),icc21_exp12_2class)
+    
+if 1:
+    #####################
+    ## for one user: how many different scoring on same image from RS1, RS2
+    #####################
+    nbr_of_diff_each_user=np.zeros([1,31])
+    for user_index in range(0,ic_reslut_2class_exp1.shape[1]):
+        data_rs1=ic_reslut_2class_exp1[:,user_index].astype(np.uint8)
+        data_rs2=ic_reslut_2class_exp2[:,user_index].astype(np.uint8)
+        compare_result=np.logical_xor(data_rs1,data_rs2).astype(np.uint8)
+        nbr_of_diff_each_user[0,user_index]=compare_result.sum()
+    
+    
+    np.savetxt(os.path.join(save_path,'nbr_of_diff_from_each_user_2class_between_RS1_RS2.out'), nbr_of_diff_each_user,fmt='%d')
+    print('nbr_of_diff_from_each_user_2class_between_RS1_RS2 = \n',nbr_of_diff_each_user)
+    print(nbr_of_diff_each_user/109)
+    # plt.figure()
+    # plt.plot(nbr_of_diff_each_user[0,:],'ro-')
+
+
+
