@@ -172,18 +172,18 @@ ic_reslut_2class_exp3 = IC_class_to_group(ic_result_continue_exp3,cutoff=cutoff_
 ## make figures
 ###############################################################################
 print('make figure for exp 1')
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_continue_RS1'),  mycmap_c100, ic_result_continue_exp1, MEDICINE_NBR,AI_NBR,remove_user_id,1)
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_4category_RS1'), mycmap_c4,   ic_reslut_4class_exp1,   MEDICINE_NBR,AI_NBR,remove_user_id,1)
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_2category_RS1'), mycmap_c2,   ic_reslut_2class_exp1,   MEDICINE_NBR,AI_NBR,remove_user_id,1)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_continue_RS1'),  mycmap_c100, ic_result_continue_exp1, MEDICINE_NBR,AI_NBR,remove_user_id,1)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_4category_RS1'), mycmap_c4,   ic_reslut_4class_exp1,   MEDICINE_NBR,AI_NBR,remove_user_id,1)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_2category_RS1'), mycmap_c2,   ic_reslut_2class_exp1,   MEDICINE_NBR,AI_NBR,remove_user_id,1)
 
 
 print('make figure for exp 2')
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_continue_RS2'),  mycmap_c100, ic_result_continue_exp2, MEDICINE_NBR,AI_NBR,remove_user_id,2)
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_4category_RS2'), mycmap_c4,   ic_reslut_4class_exp2,   MEDICINE_NBR,AI_NBR,remove_user_id,2)
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_2category_RS2'), mycmap_c2,   ic_reslut_2class_exp2,   MEDICINE_NBR,AI_NBR,remove_user_id,2)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_continue_RS2'),  mycmap_c100, ic_result_continue_exp2, MEDICINE_NBR,AI_NBR,remove_user_id,2)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_4category_RS2'), mycmap_c4,   ic_reslut_4class_exp2,   MEDICINE_NBR,AI_NBR,remove_user_id,2)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_2category_RS2'), mycmap_c2,   ic_reslut_2class_exp2,   MEDICINE_NBR,AI_NBR,remove_user_id,2)
 
 print('make figure for exp 3')
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_continue_RS3'),  mycmap_c100, ic_result_continue_exp3, MEDICINE_NBR,AI_NBR,remove_user_id,3)
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_4category_RS3'), mycmap_c4,   ic_reslut_4class_exp3,   MEDICINE_NBR,AI_NBR,remove_user_id,3)
-fig_detail_ic_score_all_user(os.path.join(save_path,'Fig3_IC_2category_RS3'), mycmap_c2,   ic_reslut_2class_exp3,   MEDICINE_NBR,AI_NBR,remove_user_id,3)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_continue_RS3'),  mycmap_c100, ic_result_continue_exp3, MEDICINE_NBR,AI_NBR,remove_user_id,3)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_4category_RS3'), mycmap_c4,   ic_reslut_4class_exp3,   MEDICINE_NBR,AI_NBR,remove_user_id,3)
+fig_detail_ic_score_all_user(os.path.join(save_path,'Fig1_IC_2category_RS3'), mycmap_c2,   ic_reslut_2class_exp3,   MEDICINE_NBR,AI_NBR,remove_user_id,3)
 
