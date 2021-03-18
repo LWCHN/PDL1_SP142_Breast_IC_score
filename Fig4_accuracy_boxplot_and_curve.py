@@ -162,7 +162,7 @@ for param in params:
     
     
     fig.text(0.5,0.02,'Ring studies',ha='center',va='center',fontsize=FONTSIZE)
-    fig.savefig(os.path.join(save_dir,'Fig5_Boxplot_Accuracy_C'+str(CLASS)+'_all_group.pdf'),dpi=300)
-    fig.savefig(os.path.join(save_dir,'Fig5_Boxplot_Accuracy_C'+str(CLASS)+'_all_group.png'),dpi=300)
+    fig.savefig(os.path.join(save_dir,'Fig4_Boxplot_Accuracy_C'+str(CLASS)+'_all_group.pdf'),dpi=300)
+    fig.savefig(os.path.join(save_dir,'Fig4_Boxplot_Accuracy_C'+str(CLASS)+'_all_group.png'),dpi=300)
 
 
