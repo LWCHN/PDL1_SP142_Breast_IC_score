@@ -1,17 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu May 28 14:41:11 2020
-
-@author: leonlwang
+@author: leonlwang@tencent.com
 """
-
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 16 10:46:28 2020
-
-@author: leonlwang
-"""
-
 import os,sys
 import pandas as pd
 import numpy as np
@@ -50,10 +40,6 @@ def calc_total_HMP(result_df,METRIC_NAME):
     print('total,high,mid,primary')
     print(total,high,mid,primary)
     return np.array([total,high,mid,primary])
-
-
-
-
 
 def calc_all(EXP):
     path_IC_Score_Pathologist = './IC_Score_Pathologist'
@@ -117,11 +103,8 @@ def calc_all(EXP):
     print(result_df['acc'].to_numpy().mean())
     print('mean total_auc')
     print(result_df['total_auc'].to_numpy().mean())
-    
-    
-    
-    
-    
+   
+   
     ## high, 1-11, mid. 12-21, primary22-31
     ## high index, 0-10, mid. 11-20, primary21-30
     acc_HMP = calc_total_HMP(result_df,'acc')

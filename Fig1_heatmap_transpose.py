@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Apr 16 10:46:28 2020
-@author: leonlwang
+@author: leonlwang@tencent.com
 """
 import os
 import pandas as pd

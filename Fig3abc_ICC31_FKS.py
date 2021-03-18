@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 22 17:01:10 2020
-@author: leonlwang
+@author: leonlwang@tencent.com
 """
 import os, sys
 import numpy as np

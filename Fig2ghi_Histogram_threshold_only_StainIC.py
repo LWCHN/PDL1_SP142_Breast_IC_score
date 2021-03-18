@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jun 28 18:29:23 2020
-@author: leonlwang
+@author: leonlwang@tencent.com
 """
 import os, sys,pdb
 import imageio
