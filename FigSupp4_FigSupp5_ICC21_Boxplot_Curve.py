@@ -142,13 +142,6 @@ def fig_icc21_curve(icc12_exp12,save_dir,save_name,linecolor='r'):
     print(np.round( np.array([H.std(),M.std(),P.std()]),decimals=3) )
 
 
-
-
-
-result_Calc_dir = './result_Calc'
-result_Fig_dir  = './result_Fig'
-
-
 # [1] FigSupp4a: show only the number of diff on 2 class
 def fig_nbr_of_diff_each_user_curve(icc21_exp12,save_dir,save_name,linecolor='r'):
     FONTSIZE=16
@@ -176,22 +169,34 @@ def fig_nbr_of_diff_each_user_curve(icc21_exp12,save_dir,save_name,linecolor='r'
     print(np.round( np.array([icc21_exp12.mean(), H.mean(),M.mean(),P.mean()]),decimals=3) )
     print(np.round( np.array([icc21_exp12.std(), H.std(),M.std(),P.std()]),decimals=3) )
    
-    
+
+
+
+
+
+result_Calc_dir = './result_Calc'
+result_Fig_dir  = './result_Fig'
+#############
+##  FigSupp4a
+#############
 nbr_of_diff_each_user = np.loadtxt(os.path.join(result_Calc_dir,'nbr_of_diff_from_each_user_2class_between_RS1_RS2.out'))
 fig_nbr_of_diff_each_user_curve(nbr_of_diff_each_user,result_Fig_dir,'FigSupp4a_nbr_of_diff_each_user',linecolor='k')
 
 
+#############
+##  FigSupp4b
+##  FigSupp4c
+#############
 # [2] see 2CLASS result icc12_exp12
 icc21_exp12_2CLASS=np.load(os.path.join(result_Calc_dir,'ICC21_CI95_exp12_2class.xlsx.npy'))
 icc21_exp12_2CLASS[ np.isnan(icc21_exp12_2CLASS) == True] = 1.0      
 fig_icc21_curve(icc21_exp12_2CLASS,result_Fig_dir,'FigSupp4b_icc21_exp12_with_HMP_curve_2CLASS',linecolor='r')
 fig_boxplot_icc21(icc21_exp12_2CLASS,result_Fig_dir,'FigSupp4c_icc21_exp12_with_HMP_boxplot_2CLASS')
 
-
-
-
-
-
+#############
+##  FigSupp5a
+##  FigSupp5b
+#############
 # [3] figure curve
 icc21_exp13=np.load(os.path.join(result_Calc_dir,'ICC21_CI95_exp13.xlsx.npy'))
 fig_icc21_curve(icc21_exp13,result_Fig_dir,'FigSupp5a_icc21_exp12_curve',linecolor='g')
